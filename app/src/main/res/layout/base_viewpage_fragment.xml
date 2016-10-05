@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/pager_tabstrip"
+            android:layout_width="match_parent"
+            android:layout_marginRight="35dp"
+            android:layout_height="38dp"
+            android:background="#fafafa"
+            app:allowWidthFull="true"
+            app:pstsIndicatorColor="#80f0"
+            app:pstsIndicatorHeight="4dp"
+            app:pstsShouldExpand="true"/>
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_edit"
+            android:layout_width="40dp"
+            android:layout_height="37dp"
+            android:layout_gravity="right"
+            android:background="#fafafa"
+            android:src="@drawable/arrow_down"
+            android:visibility="visible"/>
+
+
+        <android.support.v4.view.ViewPager
+            android:layout_marginTop="38dp"
+            android:id="@+id/pager"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_marginTop="38dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_pressed"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="8dp"/>
+
+</RelativeLayout>

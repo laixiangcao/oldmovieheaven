@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">电影天堂</string>
+    <string name="main_tab__name_home">综合</string>
+    <string name="main_tab__name_share">分类</string>
+    <string name="main_tab_name_discuss">影院</string>
+    <string name="main_tab_name_my">我的</string>
+
+    <!--加载页面显示的文字-->
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+
+    <string name="tip_drag">长按编辑,拖拽排序</string>
+    <string name="my_cahnnel">我的频道</string>
+    <string name="other_channel">其他频道</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+
+
+    <string-array name="indicator_names">
+        <item>综合</item>
+        <item>最新</item>
+        <item>最热</item>
+        <item>经典</item>
+    </string-array>
+</resources>

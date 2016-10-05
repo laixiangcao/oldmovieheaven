@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!-- google 官方下拉刷新 -->
+    <com.jiumeng.movieheaven.views.SuperRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#0000"
+            android:divider="#DADADA"
+            android:dividerHeight="1px"
+            android:listSelector="#0000"/>
+        <!--android:scrollingCache="true"-->
+    </com.jiumeng.movieheaven.views.SuperRefreshLayout>
+
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/index_stock_up"
+        fab:fab_colorNormal="@color/main_green"
+        fab:fab_colorPressed="@color/green"
+        fab:fab_colorRipple="@color/calendar_header"
+        fab:fab_shadow="true"
+        fab:fab_type="mini"/>
+
+    <TextView
+        android:layout_gravity="top"
+        android:id="@+id/tv_updata_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7defba"
+        android:gravity="center"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:text="成功为您更新了X部电影"
+        android:textColor="#fff"
+        android:textSize="14sp"/>
+
+</FrameLayout>
+
